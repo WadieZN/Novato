@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/login.css">
+    <title>NOVATO | Create account</title>
+</head>
+<body>
+    <div class="error-logo">
+        <img src="./assets/images/logo.svg" alt="Novato" >
+    </div>
+    <div class="login-header">
+        <div class="login-header-logo">
+            <img src="./assets/images/logo.svg" alt="NOVATO">
+        </div>
+    </div>
+    <div class="form-info">
+        <h1>Create account</h1>
+        <p>Made with love by developers for developers</p>
+        <form action="">
+            <label for="company-name">Company Name</label>
+            <div>
+                <img src="./assets/images/company-icon.svg" alt="">
+                <input type="text" id="company-name" name="company-name" placeholder="Company name">
+            </div>
+            <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="First name">
+
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last name">
+
+            <label for="email">Email address</label>
+            <div>
+                <img src="./assets/images/at-solid.svg" alt="">
+                <input type="email" id="email" name="email" placeholder="example@email.com">
+            </div>
+
+            <div id="check-terms">
+                <input type="checkbox" name="checked-terms" id="checked-terms">
+                <label for="checked-terms">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit">Create my account<img src="./assets/images/right-arrow.svg" alt=""></button>
+        </form>
+    </div>
+    <p class="form-bottom-text">Already have an acocunt? <a href="./login.html">Sign in</a></p>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3011 @@
+.dashboard-nav,
+header {
+    justify-content: space-between
+}
+
+.dark-layer,
+header {
+    position: fixed;
+    right: 0
+}
+
+.check-orientation,
+.error-message {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    top: 0
+}
+
+*,
+.crm-details-cards .crm-details-card:last-of-type {
+    padding: 0
+}
+
+@font-face {
+    font-family: Red-Hat-Text-Regular;
+    src: url('./../fonts/RedHatText-Regular.ttf')
+}
+
+@font-face {
+    font-family: Red-Hat-Text-Bold;
+    src: url('./../fonts/RedHatText-SemiBold.ttf')
+}
+
+:root {
+    --regular: Red-Hat-Text-Regular;
+    --bold: Red-Hat-Text-Bold;
+    --first-color: #77B724;
+    --second-color: #F1F8E9;
+    ---dark-color: #464242;
+    --light-text: #908E8E
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: #fff;
+    color: var(---dark-color);
+    font-family: var(--regular), sans-serif
+}
+
+.dark-layer {
+    display: none;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: hsla(0, 0%, 0%, .5);
+    z-index: 3
+}
+
+.error-message,
+.header-left,
+.header-right,
+header {
+    display: flex;
+    background: #2a2a2a
+}
+
+header {
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    z-index: 2
+}
+
+.header-left,
+.header-right {
+    justify-content: center;
+    gap: 20px;
+    padding: 10px
+}
+
+.header-left {
+    align-items: center
+}
+
+.header-right {
+    align-items: end;
+    gap: 24px
+}
+
+.header-right button {
+    width: 40px;
+    height: 40px;
+    border: 5px solid hsla(0, 0%, 100%, .1);
+    border-radius: 50%;
+    background: 0 0
+}
+
+.header-right button img {
+    width: 30px;
+    height: 30px
+}
+
+main {
+    margin-top: 75px
+}
+
+.calendar-nav div img,
+.nav-screen img,
+.notification-bell img {
+    width: 25px
+}
+
+.header-logo {
+    max-width: 125px
+}
+
+.check-orientation-logo img,
+.close-popup img,
+.header-logo img {
+    max-width: 100%
+}
+
+.crm-comments-pfp,
+.edit-pfp,
+.nav-pfp,
+.notification-bell {
+    position: relative
+}
+
+.notification-bell::after {
+    content: '';
+    background: red;
+    border: 3px solid #2a2a2a;
+    border-radius: 15px;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    bottom: 20px;
+    right: -2px
+}
+
+.error-message {
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 29
+}
+
+.check-orientation {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2a2a2a;
+    z-index: 31
+}
+
+.accounting-invoices-title p,
+.check-orientation h2,
+.disabled-label label,
+.error-message h2,
+.notification p {
+    color: var(--light-text)
+}
+
+.error-logo {
+    display: none;
+    position: fixed;
+    top: 30px;
+    left: 45px;
+    width: 350px;
+    z-index: 30
+}
+
+.check-orientation img {
+    width: 200px
+}
+
+.check-orientation-logo {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 170px
+}
+
+input:focus,
+textarea:focus {
+    outline: #6FD03C solid 1px
+}
+
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 15px
+}
+
+.dashboard-nav button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: 0 0;
+    font-size: 1.2rem
+}
+
+.dashboard-overview {
+    margin: 0 15px 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px
+}
+
+.dashboard-overview-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 10px;
+    border: 1px solid #dad9d9;
+    border-radius: 5px;
+    padding: 15px 10px;
+    width: 145px
+}
+
+.accounting-declarations-card-bottom div,
+.accounting-invoices-card-top div,
+.assign-team-cont-profile div,
+.crm-board-card-title,
+.dashboard-overview-div div,
+.grh-employee-card-bottom div,
+.grh-requests-card-bottom div,
+.high-label,
+.invoice-details-card-bottom div,
+.low-label,
+.medium-label,
+.pending-label,
+.project-details-card-bottom-status div,
+.project-details-header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border: 1px solid hsla(86, 67%, 43%, .4);
+    border-radius: 10px;
+    margin: 15px;
+    overflow: hidden
+}
+
+.dashboard-content-title {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background: var(--second-color);
+    width: 100%;
+    overflow: hidden
+}
+
+.dashboard-content-main-title {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+    background: var(--first-color);
+    padding: 10px 15px;
+    margin-right: 20px
+}
+
+.dashboard-content-main-title::after {
+    content: '';
+    background: var(--first-color);
+    padding: 20px;
+    position: absolute;
+    right: -15px;
+    transform: rotate(45deg);
+    border-radius: 3px;
+    z-index: 0
+}
+
+.dashboard-content-main-title h3 {
+    font-size: .9rem;
+    color: #fff;
+    z-index: 1
+}
+
+.dashboard-content-sub-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%
+}
+
+.dashboard-content-sub-title h3 {
+    color: var(--first-color);
+    font-size: .9rem
+}
+
+.declaration-title h3,
+.main-profile-info p,
+.nav-profile-info h2 {
+    color: var(---dark-color)
+}
+
+.dashboard-content-sub-title button {
+    background: var(---dark-color);
+    width: 12px;
+    height: 3px;
+    border: none;
+    border-radius: 15px;
+    margin: 7px
+}
+
+.dashboard-content-overview {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 15px
+}
+
+.dashboard-content-overview-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #dad9d9;
+    border-radius: 5px;
+    padding: 15px 10px;
+    width: 150px
+}
+
+.accounting-invoices,
+.accounting-invoices-div,
+.display-menu-item,
+.nav-bottom,
+.nav-profile,
+.nav-screen,
+.nav-section {
+    display: flex;
+    width: 100%
+}
+
+.accounting-banking-card-profile p,
+.calendar-task-date h3,
+.crm-comments-info h4,
+.dashboard-content-overview-div p,
+.grh-employee-details-card-profile-info p {
+    font-size: .9rem
+}
+
+.declaration {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start
+}
+
+.declaration-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 15px 0
+}
+
+.declaration-title h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px
+}
+
+.accounting-invoices-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    width: 100%
+}
+
+.accounting-invoices {
+    border: 1px solid hsla(86, 67%, 43%, .4);
+    border-radius: 5px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start
+}
+
+.accounting-invoices-title {
+    padding: 30px 15px 15px 0
+}
+
+.accounting-invoices-title h3 {
+    font-size: 2rem
+}
+
+.accounting-invoices-div {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 15px;
+    border-bottom: 1px solid #d7d7d7
+}
+
+.accounting-invoices-left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start
+}
+
+.accounting-invoices-right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    text-align: end
+}
+
+.display-menu {
+    background: #e6e5e6;
+    position: absolute;
+    right: 15px;
+    top: 135px;
+    border: 2px solid var(--first-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+    z-index: 1;
+    transition: .2s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: top
+}
+
+.settings-cont .modal-input,
+.visible-display-element,
+nav {
+    background: #fff
+}
+
+.notifications-tab,
+nav {
+    height: 100vh;
+    z-index: 4
+}
+
+.display-menu-item {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 3px 15px 3px 0px
+}
+
+.display-menu-item div,
+.section-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    gap: 10px
+}
+
+.display-eye img {
+    width: 14px
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 25px 15px;
+    position: fixed;
+    left: -600px;
+    top: 0;
+    min-width: 75vw;
+    transition: .3s ease-in-out;
+    overflow-y: scroll
+}
+
+.nav-profile {
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    background: hsla(0, 1%, 85%, .3);
+    padding: 15px;
+    border-radius: 15px
+}
+
+.nav-pfp img {
+    border: 5px solid #dad9d9;
+    border-radius: 50%
+}
+
+.nav-pfp::after {
+    content: url('./../images/Valid-profile.svg');
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 25px;
+    height: 25px
+}
+
+.grh-employee-details-card-profile-info,
+.invoice-details-from-info div,
+.nav-profile-info,
+.profile-notification div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 5px
+}
+
+.nav-profile-info h3 {
+    color: var(--light-text);
+    font-size: 1rem
+}
+
+.nav-section {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    padding: 30px 15px;
+    border-bottom: 1px solid #dad9d9
+}
+
+.nav-screen {
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px
+}
+
+.crm-nav-btn,
+.nav-screen-link,
+.popup-header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+.nav-screen h2,
+.nav-screen-link a {
+    color: var(---dark-color);
+    font-family: var(--bold);
+    font-size: 1.3rem
+}
+
+.nav-screen-arrow img {
+    width: 10px;
+    transition: 150ms
+}
+
+#active-screen,
+#active-secondary-link,
+.calendar h3,
+.notification h3 {
+    color: var(--first-color)
+}
+
+.nav-screen-link-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 10px;
+    padding-left: calc(100% - 50%);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in-out
+}
+
+.nav-screen-link-links.open {
+    max-height: 500px
+}
+
+.nav-screen-link-links a {
+    color: var(--light-text);
+    font-family: var(--bold);
+    font-size: 1.2rem
+}
+
+.nav-bottom {
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: var(--light-text);
+    padding: 25px 0 10px
+}
+
+.nav-logout {
+    border: none;
+    background: 0 0;
+    color: #908e8e;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px
+}
+
+.notifications-tab,
+.notifications-tab-top {
+    display: flex;
+    background: #fff;
+    position: fixed;
+    top: 0
+}
+
+.assign-team-close img,
+.crm-board-card-title img,
+.nav-logout img {
+    width: 15px
+}
+
+.notifications-tab {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    right: -600px;
+    width: 75vw;
+    transition: .3s ease-in-out;
+    overflow-y: scroll;
+    padding: 15px
+}
+
+.notifications-tab-top {
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    width: calc(75vw - 30px)
+}
+
+.notification,
+.notifications-cont {
+    display: flex;
+    flex-direction: column
+}
+
+.calendar-nav div button,
+.close-notifications,
+.crm-nav-btn button,
+.grh-requests-card-bottom button,
+.search-bar button,
+.section-nav-btn button {
+    border: none;
+    background: 0 0
+}
+
+.assign-team-cont-profile:not(:last-of-type),
+.profile-notification {
+    border-bottom: 1px solid #dad9d9
+}
+
+.notifications-cont {
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 50px
+}
+
+.notification {
+    width: 100%;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 5px
+}
+
+.main-profile-info,
+.popup-cont {
+    flex-direction: column;
+    display: flex
+}
+
+.notification h2 {
+    color: var(---dark-color);
+    font-family: var(--regular);
+    font-size: 1rem
+}
+
+.popup-cont {
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    padding: 25px 20px
+}
+
+.section-title img {
+    min-width: 22px
+}
+
+.section-title h2 {
+    color: #2a2a2a;
+    font-size: 1.3rem
+}
+
+.popup-links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin: 30px 0 25px
+}
+
+.popup-links a {
+    color: var(---dark-color);
+    font-family: var(--bold);
+    font-size: 1.1rem
+}
+
+#client-active-link,
+#employee-active-link,
+#popup-active-link {
+    position: relative;
+    color: var(--first-color)
+}
+
+#client-active-link::after,
+#employee-active-link::after,
+#popup-active-link::after,
+.settings-links::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: var(--first-color);
+    border-radius: 15px;
+    position: absolute;
+    bottom: -60%;
+    left: 0
+}
+
+.main-profile-info {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    padding: 75px 25px 25px
+}
+
+.main-profile-info img {
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #d7d7d7
+}
+
+.main-profile-info h2 {
+    color: var(---dark-color);
+    font-size: 1.4rem
+}
+
+.main-profile-info h3 {
+    color: var(---dark-color);
+    font-size: 1rem
+}
+
+.main-profile-info button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--bold);
+    background: linear-gradient(140deg, #bce411, #61ab01);
+    color: #fff;
+    margin: 30px 15px 25px
+}
+
+.profile-notifications-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    border-radius: 10px;
+    border: 1px solid #dad9d9;
+    width: 100%
+}
+
+.profile-notification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    min-width: 45px;
+    height: 25px
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3d3d3d;
+    transition: .2s;
+    border-radius: 25px
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: .4s;
+    border-radius: 50%
+}
+
+input:checked+.slider {
+    background-color: #8bc34a
+}
+
+input:checked+.slider:before {
+    transform: translateX(20px)
+}
+
+.close-popup,
+.crm-boards-header-left,
+.invoice-modal .edit-modal-slider label {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#bank-img,
+#change-pfp,
+#client-contact-img,
+#client-img,
+#general-img,
+#project-img,
+#upload-img,
+#user-img,
+.client-principal-contact,
+.edit-modal,
+.project-modal .edit-pfp::after,
+.settings-cont .edit-pfp::after {
+    display: none
+}
+
+.edit-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #f8f7f7;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+    padding-bottom: 15px;
+    z-index: 20
+}
+
+.close-modal {
+    background: 0 0;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+
+.edit-modal form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background: #f8f7f7
+}
+
+.edit-profile-pic img {
+    border-radius: 50%;
+    width: 90px;
+    border: 3px solid #d7d7d7
+}
+
+.edit-pfp::after {
+    content: url('./../images/camera.svg');
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 10px;
+    right: 0
+}
+
+.fancy-modal-input,
+.modal-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 5px;
+    padding-top: 15px;
+    background: #f8f7f7
+}
+
+.modal-input textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    padding: 15px
+}
+
+.fancy-modal-input div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid #2a2a2a;
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    position: relative
+}
+
+.fancy-modal-input input {
+    border: none;
+    width: 100%;
+    font-size: .9rem;
+    padding: 15px 0
+}
+
+.assign-team-search input:focus,
+.fancy-modal-input input:focus,
+.search-bar input:focus {
+    outline: 0;
+    border: none
+}
+
+.fancy-modal-input label,
+.modal-input label {
+    color: var(---dark-color);
+    font-family: var(--bold)
+}
+
+.modal-input input,
+.modal-input select {
+    border: 1px solid #2a2a2a;
+    background: #fff;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px 15px;
+    font-size: .9rem
+}
+
+#change-password,
+.modal-input-disabled,
+.modal-input-disabled input,
+.profile-info-modal .fancy-modal-input div,
+.profile-info-modal .modal-input-disabled:not(:last-of-type) {
+    background: #ddd
+}
+
+.fancy-modal-input a {
+    position: absolute;
+    top: -48%;
+    right: 0;
+    color: var(--first-color);
+    font-family: var(--bold)
+}
+
+.edit-modal-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    width: 100%
+}
+
+.edit-modal-btn button {
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--bold);
+    padding: 15px 25px;
+    border-radius: none
+}
+
+.cancel-modal-edit {
+    background: #e6e5e6;
+    color: var(--light-text)
+}
+
+.modal-submit-edit {
+    background: #000;
+    color: #fff
+}
+
+.edit-modal-slider {
+    align-self: start;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 15px;
+    padding: 20px 0 10px
+}
+
+.assign-team,
+.invoice-modal-btns {
+    justify-content: start;
+    display: flex
+}
+
+.invoice-modal-btns {
+    align-items: center;
+    gap: 15px;
+    align-self: start;
+    padding: 15px 0
+}
+
+.invoice-modal-btns button {
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 0 5px #e6e5e6;
+    font-size: .9rem;
+    font-family: var(--bold)
+}
+
+.invoice-expense-btn,
+.invoice-income-btn {
+    background: #fff;
+    color: var(--dark-color)
+}
+
+.active,
+.popup-menu-element:hover,
+.weekdays button.active {
+    background: var(--first-color);
+    color: #fff
+}
+
+.assign-team {
+    align-items: start;
+    flex-direction: column;
+    padding: 20px 0 15px;
+    width: 100%
+}
+
+.assign-team-cont-profiles,
+.assign-team-cont-top {
+    padding: 15px;
+    width: 100%
+}
+
+.assign-team-btn {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: start;
+    gap: 10px
+}
+
+.assign-team-btn h2,
+.assign-team-close h2,
+.grh-payroll-card-profile h2,
+.grh-requests-card-info h2,
+.grh-requests-card-profile h2 {
+    font-size: 1.3rem;
+    color: var(--first-color)
+}
+
+.accounting-declarations-card-info p,
+.calendar-task-profile h4,
+.grh-employee-card-profile p,
+.grh-employee-details-card-profile p,
+.popup-menu button,
+.tva-card p {
+    color: var(--light-text);
+    font-family: var(--bold)
+}
+
+.assign-team-btn button,
+.assign-team-close button,
+.grh-employee-details-nav button {
+    border: none;
+    background: 0 0;
+    padding: 5px
+}
+
+.toggle-assign-team {
+    display: none;
+    width: 100%
+}
+
+.assign-team-close,
+.crm-board-card-bottom,
+.grh-payroll-card-bottom div,
+.project-details-card-bottom-div,
+.requests-details-high-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.assign-team-close button {
+    border: none;
+    background: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--bold);
+    font-size: 1rem
+}
+
+.assign-team-search {
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid var(---dark-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0 15px
+}
+
+.assign-team-search input {
+    padding: 20px;
+    border: none;
+    width: 100%;
+    font-size: 1rem
+}
+
+.assign-team-search button {
+    padding: 5px 20px 5px 5px;
+    background: 0 0;
+    border: none
+}
+
+.assign-team-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dad9d9;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #dad9d9;
+    overflow: hidden
+}
+
+.assign-team-cont-top {
+    background: #f8f7f7;
+    border-bottom: 1px solid #d9d9d9
+}
+
+.assign-team-cont-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px
+}
+
+.assign-team-cont-profile img {
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid #dad9d9
+}
+
+.calendar-cont {
+    padding: 25px 15px;
+    width: 100%
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px 0
+}
+
+.calendar-nav h2,
+.crm-board-card h2,
+.grh-employee-details-card-expenses h2,
+.popup-header div h2,
+.popup-menu-element h2,
+.project-details-section-title h2 {
+    font-size: 1.2rem
+}
+
+.calendar-nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.calendars {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 7px;
+    width: 100%
+}
+
+.calendar {
+    width: 100%;
+    background: var(--second-color);
+    border: 1px solid var(--first-color);
+    border-radius: 5px;
+    padding: 10px
+}
+
+.calendar div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px
+}
+
+.popup-menu {
+    background: #fff;
+    width: 95vw;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -4%);
+    z-index: 6;
+    overflow: hidden
+}
+
+.popup-menu-element {
+    padding: 20px;
+    border-bottom: 1px solid #dad9d9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(---dark-color);
+    transition: .1s
+}
+
+.popup-menu button {
+    background: #e6e5e6;
+    padding: 20px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin: 15px 0 20px
+}
+
+.calendar-task-details {
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 10
+}
+
+.popup-header {
+    padding: 20px;
+    background: #2a2a2a;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.popup-header div img {
+    width: 20px
+}
+
+.close-popup button {
+    border: none;
+    background: 0 0;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.golden-new {
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background: #fb0;
+    font-size: .8rem
+}
+
+.popup-main-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #d7d7d7;
+    border-radius: 7px
+}
+
+.calendar-task-profile {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 25px
+}
+
+.calendar-task-profile img {
+    border-radius: 50%;
+    border: 3px solid #dad9d9;
+    width: 85px
+}
+
+.calendar-task-profile h2 {
+    color: var(--first-color);
+    font-size: 1.4rem
+}
+
+.calendar-task-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    align-self: center;
+    padding: 25px 10px 0
+}
+
+.calendar-task-div,
+.calendar-task-info {
+    text-align: start;
+    width: 100%;
+    display: flex
+}
+
+.calendar-task-info {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+    padding-bottom: 25px
+}
+
+.accounting-invoices-card-info h2,
+.calendar-task-info h2,
+.crm-card-title h2,
+.grh-employee-card-profile h2,
+.grh-employee-details-card-profile h2,
+.project-details-card-info h2 {
+    color: var(--first-color);
+    font-size: 1.2rem
+}
+
+.calendar-task-info p {
+    color: var(--light-text);
+    padding-top: 10px
+}
+
+.calendar-task-div {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start
+}
+
+.team-assigned {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.team-assigned-profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.team-assigned-profiles img {
+    width: 35px;
+    border-radius: 50%;
+    border: 2px solid #dad9d9
+}
+
+.crm-card,
+.crm-card-top {
+    width: 100%;
+    display: flex
+}
+
+.team-assigned-profiles h4 {
+    background: #fafaf9;
+    border-radius: 25px;
+    padding: 5px
+}
+
+.calendar-task-div button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    background: #e6e5e6;
+    border: none;
+    border-radius: 5px
+}
+
+.section-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px;
+    gap: 10px
+}
+
+.section-nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px
+}
+
+.section-nav-btn img {
+    width: 27px
+}
+
+.crm-main-cont {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px
+}
+
+.crm-card {
+    padding: 20px 15px;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #d7d7d7;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start
+}
+
+.crm-card-top {
+    justify-content: space-between;
+    align-items: start
+}
+
+.crm-card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px;
+    padding-bottom: 20px
+}
+
+.crm-card small {
+    font-family: var(--bold);
+    font-size: .9rem;
+    padding-top: 15px
+}
+
+.crm-boards {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #f8f7f7;
+    display: none;
+    z-index: 10
+}
+
+.crm-boards-header {
+    background: #fff;
+    border-bottom: 1px solid #d7d7d7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 20px
+}
+
+.close-crm-boards {
+    background: 0 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 10px 5px
+}
+
+.crm-boards-header-left h2 {
+    font-size: 1.4rem;
+    padding-right: 15px
+}
+
+.crm-boards-cont {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding: 15px 15px 30px;
+    overflow-x: scroll
+}
+
+.crm-board,
+.crm-board-cards {
+    flex-direction: column;
+    display: flex
+}
+
+.crm-boards-cont::-webkit-scrollbar {
+    display: none
+}
+
+.crm-board {
+    min-width: 90%;
+    justify-content: center;
+    align-items: center
+}
+
+.crm-board-btn {
+    position: relative;
+    width: 100%;
+    padding-bottom: 15px
+}
+
+.crm-board-btn button {
+    width: 100%;
+    background: #2a2a2a;
+    color: #fff;
+    font-family: var(--bold);
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px
+}
+
+.crm-board-btn::after {
+    content: url('./../images/down-arrow.svg');
+    position: absolute;
+    bottom: 5px;
+    left: 48%;
+    z-index: 6
+}
+
+.crm-board-cards {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px
+}
+
+.crm-board-card,
+.crm-details-card {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #dad9d9;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px #d7d7d7;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px
+}
+
+.labels {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px
+}
+
+.label {
+    font-size: .8rem;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background: #dad9d9;
+    color: #464242
+}
+
+.grh-label {
+    background: #c3f4be;
+    color: #408339
+}
+
+.admin-label {
+    background: #fceafd;
+    color: #c51054
+}
+
+.manager-label {
+    background: #00a8f1;
+    color: #fff
+}
+
+.active-label,
+.green-label,
+.grh-employee-details-nav-popup-element:hover,
+.staff-label {
+    background: #6fd03c;
+    color: #fff
+}
+
+.clock-text,
+.invoice-details-from-info,
+.invoice-details-label,
+.project-details-top-team div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.clock-text p {
+    font-size: .9rem;
+    font-family: var(--bold)
+}
+
+.crm-details {
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    z-index: 10;
+    display: none
+}
+
+.details-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #dad9d9
+}
+
+.details-popup-header button {
+    background: 0 0;
+    border: none;
+    padding: 5px
+}
+
+.crm-details-cards,
+.grh-requests-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px
+}
+
+.crm-board-card-title h2 {
+    color: var(--first-color);
+    font-size: 1.1rem
+}
+
+.dark-text {
+    font-family: var(--bold)
+}
+
+.crm-check {
+    padding-left: 20px;
+    font-family: var(--bold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.crm-comments-div {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+    padding: 15px
+}
+
+.crm-comments-pfp img {
+    border-radius: 50%;
+    width: 50px
+}
+
+.crm-comments-pfp::after {
+    content: '';
+    background-image: url('./../images/mini-gear.svg');
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px
+}
+
+.crm-comments-info,
+.invoice-details-top-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 5px
+}
+
+.crm-comments-info p {
+    padding-top: 7px;
+    font-family: var(--bold)
+}
+
+.crm-comments-bottom {
+    width: 100%;
+    background: #dad9d9
+}
+
+.crm-comments-bottom textarea {
+    width: 100%;
+    border: none;
+    background: #e4e4e4;
+    padding: 15px
+}
+
+.crm-details-cards .crm-details-card:last-of-type .crm-board-card-title {
+    padding: 15px 0 0 15px
+}
+
+.grh-employee-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 15px
+}
+
+.grh-employee-card {
+    position: relative;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #dad9d9;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 45px
+}
+
+.grh-employee-card-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px
+}
+
+.grh-employee-card-profile img,
+.grh-payroll-card-profile img,
+.grh-requests-card-profile img {
+    border: 3px solid #dad9d9;
+    border-radius: 50%;
+    width: 75px
+}
+
+.grh-employee-card-profile h3,
+.grh-employee-details-card-profile h3 {
+    font-family: var(--bold);
+    font-size: 1rem
+}
+
+.grh-employee-card-profile .labels {
+    padding: 10px 0 20px
+}
+
+.grh-employee-card-bottom {
+    background: #f8f7f7;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.pending-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    background: #fb0
+}
+
+.grh-employee-card button,
+.projects-card button,
+.projects-client-card button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: 0 0;
+    padding: 15px
+}
+
+.grh-employee-card button img,
+.projects-card button img,
+.projects-client-card button img,
+.three-dots img {
+    width: 17px
+}
+
+.grh-employee-details,
+.invoice-details {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+    z-index: 10
+}
+
+.grh-employee-details .popup-links {
+    margin-top: 10px
+}
+
+.grh-employee-details-nav {
+    position: relative;
+    padding: 15px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
+
+.grh-employee-details-card {
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #d7d7d7;
+    margin: 15px;
+    overflow: hidden
+}
+
+.grh-employee-details-card-profile {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding: 15px 5px
+}
+
+.grh-employee-details-card-profile-pfp img {
+    width: 75px;
+    border-radius: 50%;
+    border: 3px solid #d7d7d7
+}
+
+.grh-employee-details-card-profile-info .labels {
+    padding-top: 10px
+}
+
+.grh-employee-details-card-profile button {
+    background: #dad9d9;
+    border: 1px solid #c7c7c7;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 12px;
+    font-family: var(--bold);
+    font-size: .9rem;
+    position: absolute;
+    right: 10px
+}
+
+.grh-employee-details-card-date {
+    padding: 30px 0;
+    margin: 30px 25px;
+    border-bottom: 1px solid #dad9d9;
+    border-top: 1px solid #dad9d9;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px
+}
+
+.grh-employee-details-card-date p {
+    font-family: var(--bold);
+    font-size: .9rem
+}
+
+.grh-employee-details-card-expenses {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+    padding: 5px 15px 30px
+}
+
+.grh-employee-details-card-expenses div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px
+}
+
+.grh-employee-details-card-expenses p {
+    color: var(--light-text);
+    font-size: .9rem;
+    font-family: var(--bold);
+    max-width: 100px
+}
+
+.grh-employee-details-nav-popup {
+    background: #fff;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    width: 150px;
+    display: none;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    flex-direction: column;
+    position: absolute;
+    right: 15px;
+    bottom: -200px;
+    box-shadow: 0 0 5px #dad9d9;
+    z-index: 10;
+    overflow: hidden
+}
+
+.grh-employee-details-nav-popup-element {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: var(---dark-color);
+    border-bottom: 1px solid #f8f7f7;
+    font-size: .9rem;
+    transition: .1s
+}
+
+.edit-modal .popup-links {
+    padding: 0 15px
+}
+
+.edit-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 25px 20px;
+    background: #fff;
+    border-bottom: 1px solid #dad9d9
+}
+
+.edit-modal-header .close-modal {
+    position: static
+}
+
+.employee-modal-contrat {
+    display: none
+}
+
+.grh-payroll-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    width: 100%
+}
+
+.accounting-declarations-card,
+.accounting-invoices-card,
+.grh-payroll-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #dad9d9;
+    overflow: hidden
+}
+
+.grh-payroll-card-profile {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px
+}
+
+.grh-payroll-card-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 5px;
+    border-top: 1px solid #dad9d9;
+    margin: 0 15px 0 0;
+    padding: 25px 0 25px 15px;
+    width: 90%
+}
+
+.grh-payroll-card-info h2 {
+    color: var(--first-color);
+    font-size: 1.3rem
+}
+
+.grh-payroll-card-info small {
+    color: var(--light-text);
+    font-family: var(--bold);
+    padding-bottom: 10px
+}
+
+.grh-payroll-card-info button {
+    background: #dad9d9;
+    border: 1px solid #c7c7c7;
+    color: var(---dark-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 12px;
+    font-family: var(--bold);
+    font-size: .9rem;
+    position: absolute;
+    right: 0
+}
+
+.grh-payroll-card-bottom {
+    width: 100%;
+    background: #f8f7f7;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px
+}
+
+.accounting-banking-card-info p,
+.grh-payroll-card-bottom p {
+    color: var(--light-text);
+    font-family: var(--bold);
+    font-size: .9rem
+}
+
+.accounting-invoices-card-bottom h2,
+.grh-payroll-card-bottom h2,
+.invoice-details-card div h2,
+.project-details-card-bottom .clock-text p {
+    font-size: 1.1rem
+}
+
+.search-bar {
+    display: none;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    background: #fff;
+    border: 1px solid var(--first-color);
+    border-radius: 8px;
+    overflow: hidden;
+    padding-left: 10px;
+    position: absolute;
+    top: 15px
+}
+
+.search-bar input {
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 1rem
+}
+
+.grh-requests-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #dad9d9;
+    overflow: hidden;
+    padding: 15px
+}
+
+.three-dots {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 15px;
+    border: none;
+    background: 0 0
+}
+
+.grh-requests-card-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    align-self: center;
+    padding: 15px 0 25px;
+    width: 100%
+}
+
+.account-users-card h3,
+.grh-requests-card-profile h3,
+.invoice-details-from-info h3,
+.projects-card-info h3,
+.projects-client-card-info h3 {
+    font-size: 1rem
+}
+
+.grh-requests-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 5px;
+    padding: 25px 0;
+    border-top: 1px solid #dad9d9;
+    border-bottom: 1px solid #dad9d9;
+    width: 100%
+}
+
+.grh-requests-card-info small {
+    font-size: 1rem;
+    color: var(--light-text);
+    font-family: var(--bold);
+    padding-bottom: 8px
+}
+
+.grh-requests-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 25px 0 15px
+}
+
+.completed-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--bold)
+}
+
+.completed-label div {
+    width: 10px;
+    height: 10px;
+    background: #6fd03c;
+    border-radius: 15px
+}
+
+.request-details {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background: #f8f7f7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 11
+}
+
+.request-details-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 15px
+}
+
+.requests-details-high-label div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--bold);
+    color: #c51054
+}
+
+.accounting-banking-cards,
+.accounting-invoices-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px 15px
+}
+
+.accounting-banking-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #dad9d9;
+    overflow: hidden;
+    padding: 15px
+}
+
+.accounting-banking-card-profile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dad9d9
+}
+
+.account-users-card img,
+.accounting-banking-card-profile img,
+.projects-card-info img,
+.projects-client-card-info img {
+    border-radius: 50%;
+    border: 4px solid #dad9d9;
+    width: 75px
+}
+
+.account-users-card h2,
+.accounting-banking-card-info h2,
+.accounting-banking-card-profile h2,
+.invoice-details-from-info h2,
+.projects-card-info h2,
+.projects-client-card-info h2,
+.tva-card h2 {
+    font-size: 1.2rem;
+    color: var(--first-color)
+}
+
+.accounting-banking-card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+    width: 100%;
+    padding: 25px 0 15px
+}
+
+.accounting-banking-card-info div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 10px
+}
+
+.accounting-banking-card-info button {
+    background: #dad9d9;
+    border: 1px solid #c7c7c7;
+    color: var(---dark-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 12px;
+    font-family: var(--bold);
+    font-size: .9rem
+}
+
+.accounting-invoices-card-bottom p,
+.accounting-invoices-card-info h3 {
+    font-size: .9rem;
+    color: var(--light-text);
+    font-family: var(--bold)
+}
+
+.accounting-invoices-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px
+}
+
+.accounting-invoices-card-top button {
+    border: none;
+    background: 0 0;
+    padding: 12px
+}
+
+.accounting-invoices-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 5px;
+    padding: 0 15px 15px
+}
+
+.accounting-invoices-card-info h3 {
+    padding-bottom: 10px
+}
+
+.accounting-invoices-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f7f7;
+    padding: 20px;
+    width: 100%
+}
+
+.invoice-details-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d7d7d7
+}
+
+.invoice-details-top-info h2 {
+    font-size: 1.5rem;
+    color: var(--first-color)
+}
+
+.invoice-details-top-info h3 {
+    font-size: 1rem;
+    color: var(--light-text);
+    padding-bottom: 10px
+}
+
+.invoice-details-card-yellow-div,
+.invoice-details-label p {
+    color: #734d2c;
+    font-family: var(--bold)
+}
+
+.invoice-details-from {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 15px
+}
+
+.invoice-details-from h4 {
+    font-size: .9rem;
+    font-family: var(--bold);
+    padding-right: 25px
+}
+
+.invoice-details-from-info img {
+    border-radius: 50%;
+    border: 3px solid #dad9d9;
+    width: 75px
+}
+
+.invoice-details-card,
+.tva-card {
+    flex-direction: column;
+    border: 1px solid #dad9d9;
+    box-shadow: 0 0 5px #dad9d9
+}
+
+.invoice-details-card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px;
+    padding-top: 10px
+}
+
+.invoice-details-card-border {
+    width: 90%;
+    height: 1px;
+    background: #d7d7d7;
+    margin: 15px
+}
+
+.invoice-details-card-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px
+}
+
+.invoice-details-card-yellow-div {
+    background: #fdf5da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px
+}
+
+.orange-label {
+    background: #ffb800;
+    color: #fff;
+    padding: 4px 15px
+}
+
+.invoice-details-card-bottom {
+    background: #f8f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    margin-top: 25px;
+    width: 100%
+}
+
+.account-users-cards,
+.accounting-declarations-cards,
+.projects-cards,
+.projects-client-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px
+}
+
+.accounting-declarations-card-info {
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%
+}
+
+.accounting-declarations-card-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    width: 100%
+}
+
+.accounting-declarations-card-info h2 {
+    font-size: 1.2rem;
+    color: var(--first-color);
+    padding: 10px 0
+}
+
+.accounting-declarations-card-bottom {
+    width: 100%;
+    background: #f8f7f7;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.accounting-declarations-card button {
+    background: 0 0;
+    border: none;
+    padding: 7px 15px 15px
+}
+
+.project-details,
+.tva-popup {
+    width: 100vw;
+    height: 100vh;
+    background: #f8f7f7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none;
+    z-index: 10
+}
+
+.tva-card {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px 15px;
+    padding-top: 50px
+}
+
+.tva-card button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border: none;
+    background: 0 0;
+    padding: 12px
+}
+
+.tva-card .accounting-declarations-card-div,
+.tva-card .clock-text {
+    padding: 10px 15px
+}
+
+.tva-card-bottom {
+    width: 100%;
+    background: #f8f7f7;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.tva-card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px
+}
+
+.tva-card-border {
+    height: 1px;
+    width: 92%;
+    margin: 15px;
+    background: #d7d7d7
+}
+
+.tva-card-comment .crm-details-card {
+    border: none;
+    box-shadow: none
+}
+
+.tva-card-bottom-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.tva-card-bottom-team-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px 0
+}
+
+.change-declaration-status-popup {
+    width: 100vw;
+    height: 100vh;
+    background: #f8f7f7;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    display: none
+}
+
+.project-details-card,
+.projects-card,
+.projects-client-card {
+    box-shadow: 0 0 5px #dad9d9;
+    overflow: hidden;
+    position: relative
+}
+
+.change-declaration-status-popup form,
+.settings-cont {
+    padding: 15px
+}
+
+.projects-card,
+.projects-client-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    padding-top: 25px
+}
+
+.projects-card-info,
+.projects-client-card-info {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%
+}
+
+.projects-card-info .clock-text img,
+.projects-client-card-info .clock-text img {
+    border-radius: none;
+    border: none;
+    width: 15px
+}
+
+.project-details-header-left button,
+.project-details-header-right button {
+    border: none;
+    padding: 10px 5px;
+    background: 0 0
+}
+
+.projects-card-bottom,
+.projects-client-card-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f7f7;
+    padding: 15px;
+    margin-top: 25px
+}
+
+.projects-card-bottom div,
+.projects-client-card-bottom div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px
+}
+
+.project-details-header {
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.project-details-card,
+.project-details-header-info {
+    flex-direction: column;
+    text-align: start;
+    display: flex
+}
+
+.project-details-header-left button {
+    width: 25px
+}
+
+.project-details-header-right img {
+    border-radius: 50px;
+    border: 5px solid #eee
+}
+
+.project-details-header-info {
+    justify-content: start;
+    align-items: start;
+    gap: 3px
+}
+
+.project-details-header-info h2 {
+    font-size: 1.2rem;
+    font-family: var(--bold)
+}
+
+.project-details-top-team {
+    width: 100%;
+    background: #6a6666;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 30px
+}
+
+.project-details-top-team h3 {
+    font-size: 1rem;
+    color: #fff
+}
+
+.project-details-section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 15px 0
+}
+
+.project-details-card {
+    justify-content: start;
+    align-items: start;
+    background: #fff;
+    border: 1px solid #dad9d9;
+    border-radius: 10px;
+    margin: 15px
+}
+
+.project-details-card button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: 0 0;
+    border: none;
+    padding: 15px
+}
+
+.project-details-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 10px;
+    padding: 20px
+}
+
+.high-label {
+    color: #c51054
+}
+
+.medium-label {
+    color: #734d2c
+}
+
+.low-label {
+    color: #edd502
+}
+
+.project-details-card-info h5 {
+    color: var(--light-text);
+    font-size: 1rem;
+    font-weight: 100
+}
+
+.project-details-card-bottom {
+    width: 100%;
+    background: #f8f7f7;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 15px
+}
+
+.project-details-card-bottom-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0
+}
+
+.working-on-label div {
+    width: 10px;
+    height: 10px;
+    background: #00a8f1;
+    border-radius: 15px
+}
+
+.need-review-label div {
+    width: 10px;
+    height: 10px;
+    background: #ff6853;
+    border-radius: 15px
+}
+
+.account-users-card,
+.bank-info-form,
+.general-info-form {
+    border: 1px solid #dad9d9;
+    background: #fff;
+    box-shadow: 0 0 5px #dad9d9;
+    width: 100%;
+    overflow: hidden
+}
+
+.account-users-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 35px 15px 15px
+}
+
+.account-users-card p {
+    font-family: var(--bold);
+    color: var(--light-text)
+}
+
+.account-users-card button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: 0 0;
+    border: none;
+    padding: 15px
+}
+
+.account-users-card button img {
+    width: 15px;
+    border-radius: 0;
+    border: none
+}
+
+.settings-links {
+    font-size: 1.2rem;
+    position: relative;
+    color: var(--first-color);
+    display: inline
+}
+
+.bank-info-form,
+.general-info-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 10px;
+    margin: 50px 0;
+    padding: 10px
+}
+
+.bank-info-form form,
+.general-info-form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%
+}
+
+.work-schedule-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    background: #fff;
+    border: 1px solid #dad9d9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #dad9d9;
+    overflow: hidden;
+    width: 100%;
+    margin: 25px 0
+}
+
+.settings-text {
+    padding: 30px 0 0;
+    max-width: 300px
+}
+
+.weekdays {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px
+}
+
+.weekdays button {
+    background: #e6e5e6;
+    color: var(---dark-color);
+    font-family: var(--bold);
+    padding: 15px;
+    border: none;
+    font-size: 1rem;
+    transition: 75ms
+}
+
+.settings-cont .profile-notifications-cont {
+    margin-top: 50px
+}
+
+.small-hamburger {
+    padding: 15px;
+}
